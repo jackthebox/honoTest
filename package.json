@@ -14,5 +14,7 @@
     "nextjs-stack"
   ],
   "license": "MIT",
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "twilio": "^3.0.0"
 }
