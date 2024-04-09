@@ -6,7 +6,11 @@ import { twiml } from 'twilio'
 const app = new Hono()
 app.use('*', logger())
 app.post('/incoming-call', (c) => {
-  return c.text('Hello World')
+  const voiceResponse = new twiml.VoiceResponse()
+  voiceResponse.say("Hello, Welcome to Living Word Bible Church.")
+
+  c.header("Content-Type", "application/xml")
+  return c.body(voiceResponse.toString())
 })
 
 const port = 3000
