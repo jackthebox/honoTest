@@ -17,4 +17,5 @@
   "packageManager": "yarn@3.2.1",
   "dependencies": {
     "twilio": "^3.0.0"
+  }
 }
